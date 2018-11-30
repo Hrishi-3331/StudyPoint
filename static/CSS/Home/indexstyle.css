@@ -3,6 +3,10 @@
     padding-left: 8px;
 }
 
+body {
+    background-color: #e5e5e5;
+}
+
 .navbar-custom {
     background-color: #323232;
 }
@@ -52,18 +56,16 @@ ul .custom-link:hover {
     border-bottom-left-radius: 0px;
 }
 
-body {
-    background-color: #e5e5e5;
-}
-
 .custom-head {
     font-family: 'Merriweather', serif;
-    background-color: black;
+    background-image: url("/static/IMAGES/backone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     border-radius: 0px;
     margin-bottom: -8px;
-    height: 200px;
-    padding: 16px;
+    height: 250px;
+    padding: 35px 16px 16px 16px;
     alignment: center;
     text-align: center;
 }
@@ -84,3 +86,4 @@ body {
 .custom-dropdown-menu {
     width: 250px;
 }
+

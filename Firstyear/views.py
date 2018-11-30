@@ -4,5 +4,5 @@ from django.shortcuts import render, HttpResponse
 
 
 def homepage(request):
-    return HttpResponse("<h1>First year data here</h1>")
+    return render(request, 'StudyPoint', {})
 

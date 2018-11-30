@@ -6,11 +6,14 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'StudyPoint/', {})
+    return render(request, 'StudyPoint/about.html', None)
 
 
-def contact(request):
-    return render(request, 'StudyPoint/', {})
+def contactus(request):
+    return render(request, 'StudyPoint/contact.html', None)
+
+
+
 
 
 
