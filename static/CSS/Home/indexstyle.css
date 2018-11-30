@@ -1,0 +1,86 @@
+.custom-head {
+    margin: 0px;
+    padding-left: 8px;
+}
+
+.navbar-custom {
+    background-color: #323232;
+}
+
+.custom-link {
+    color: white;
+}
+.custom-item{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+ul .custom-link:hover {
+     color: white;
+     background-color: black;
+}
+
+.custom-right {
+    display: inline-block;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-form {
+        display: none;
+    }
+
+    .title-class2 {
+        display: inline-block;
+        color: white;
+    }
+
+    .title-class1 {
+        font-size: 30px;
+        margin-top: 8px;
+    }
+
+}
+
+.title-class2 {
+   display: none;
+}
+
+.custom-btn {
+    margin-left: -16px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.custom-head {
+    font-family: 'Merriweather', serif;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    margin-bottom: -8px;
+    height: 200px;
+    padding: 16px;
+    alignment: center;
+    text-align: center;
+}
+
+.header-image {
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-image {
+        display: none;
+        border-radius: 0px;
+    }
+}
+
+.custom-dropdown-menu {
+    width: 250px;
+}
