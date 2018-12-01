@@ -1,3 +1,8 @@
+{% load staticfiles %}
 {% include 'StudyPoint/base.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/contact.css' %}">
+{% endblock %}
+{% block body %}
 <h1 class = "this-page">Contact Us </h1>
-<h2>page 2</h2>
+{% endblock %}

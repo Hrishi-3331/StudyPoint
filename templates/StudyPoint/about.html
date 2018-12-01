@@ -1,3 +1,9 @@
+{% load staticfiles %}
 {% include 'StudyPoint/base.html' %}
-{% block title %}About us{% endblock %}
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/about.css'  %}">
+{% endblock %}
+{% block body %}
 <h1 class = "this-page">About Us</h1>
+
+{% endblock %}

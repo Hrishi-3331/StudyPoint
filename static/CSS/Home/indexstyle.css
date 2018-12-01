@@ -58,9 +58,8 @@ ul .custom-link:hover {
 
 .custom-head {
     font-family: 'Merriweather', serif;
-    background-image: url("/static/IMAGES/backone.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background: url("/static/IMAGES/backone.jpg") no-repeat;
     color: white;
     border-radius: 0px;
     margin-bottom: -8px;

@@ -6,11 +6,17 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'StudyPoint/about.html', None)
+    title = 'About Us'
+    args = {
+        'title': title,
+            }
+    return render(request, 'StudyPoint/about.html', args)
 
 
 def contactus(request):
-    return render(request, 'StudyPoint/contact.html', None)
+    title = 'Contact Us'
+    args = {'title': title}
+    return render(request, 'StudyPoint/contact.html', args)
 
 
 
