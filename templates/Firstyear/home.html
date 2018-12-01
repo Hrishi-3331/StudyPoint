@@ -1,0 +1,123 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VNIT StudyPoint</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/indexstyle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/Firstyear/home.css' %}">
+</head>
+<body>
+
+<header class="container-fluid custom-head">
+    <h1 class="title-class1">VNIT STUDYPOINT </h1><br>
+    <h2>FIRST YEAR</h2>
+</header>
+
+<nav class="navbar navbar-expand-sm sticky-top navbar-custom" id="header">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+            <i class="fa fa-fw fa-bars" style="color: white"></i>
+       </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="nav navbar-nav ">
+            <li class="nav-item custom-item">
+                <a class="nav-link custom-link" href='/'><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link custom-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Department </a>
+                <div class="dropdown-menu  custom-dropdown-menu">
+                    <div class="dropdown-header">FIRST YEAR</div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Physics Stream</a>
+                    <a class="dropdown-item" href="#">Chemistry Stream</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">DEPARTMENTS</div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-laptop"></i>  CSE</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-microchip"></i>  ECE</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-plug"></i>  EEE</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-wrench"></i>  MECH</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-industry"></i>  MME</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-flask"></i>  CHE </a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-skull-crossbones"></i>  MIN</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li>
+                <a class="nav-link custom-link" href='about' ><i class="fa fa-fw fa-info-circle"></i> About Us</a>
+
+           <li class="nav-item">
+                <a class="nav-link custom-link" href='contact'><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            </li>
+        </ul>
+
+        </div>
+
+
+        <div class="custom-right">
+            <ul class="nav navbar-right">
+                <form class="form-inline custom-form" action="submit">
+                    <input class="form-control mr-sm-2" type="text" placeholder="SEARCH HERE">
+                    <button class="btn custom-btn" type="submit"><i class="fa fa-fw fa-search"></i> </button>
+                </form>
+                <li class="nav-item"><a class="nav-link custom-link" href="#"><i class="fa fa-fw fa-user"></i> Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link custom-link" href="#"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<br><center>
+<div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+<div class="container-fluid streambox">
+    <div class="row">
+        <div class="col stream">
+            <div class="heading">
+                <h3>PHYSICS STREAM</h3>
+            </div>
+            <a href="#"><img src="{% static 'IMAGES/physics.jpg' %}" class="stream-img"></a>
+            <div class="menu">
+                <ul class="menu-list">
+                  <li class="menu-item"><a class="menu-link" href="#">Engineering Mechanics</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Engineering Drawing</a> </li>
+                  <li class="menu-item"><a class="menu-link" href="#">Mathematics</a> </li>
+                  <li class="menu-item"><a class="menu-link" href="#">Physics</a> </li>
+                  <li class="menu-item"><a class="menu-link" href="#">Communication Skill</a> </li>
+
+                </ul>
+            </div>
+        </div>
+         <div class="col stream">
+            <div class="heading">
+                <h3>CHEMISTRY STREAM</h3>
+            </div>
+            <a href="#"><img src="{% static 'IMAGES/chem.jpg' %}" class="stream-img"></a>
+             <div class="menu">
+                <ul class="menu-list">
+                  <li class="menu-item"><a class="menu-link" href="#">Electrical Engineering</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Computer Programming</a> </li>
+                  <li class="menu-item"><a class="menu-link" href="#">Mathematics</a> </li>
+                  <li class="menu-item"><a class="menu-link" href="#">Chemistry</a> </li>
+                  <li class="menu-item"><a class="menu-link" href="#">Social Science</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</center>
+<br><br><br>
+</body>
+</html>
