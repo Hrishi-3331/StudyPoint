@@ -1,0 +1,78 @@
+.content {
+    width: 70%;
+    text-align: left;
+}
+
+.subjects {
+    margin-top: 15px;
+    width:60% ;
+}
+
+.left-box {
+    display: block;
+    margin: 0px;
+    width: 50%;
+    float: left;
+    clear: both;
+}
+
+.sub-img {
+    height: 300px;
+    margin-right: -4px;
+    width: 100%;
+}
+
+.right-box {
+    background-color: white;
+    margin: 0px;
+    float: right;
+    height: 300px;
+    width: 50%;
+    display: block;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.subject-title {
+    width: fit-content;
+    padding: 8px;
+    background-color: gray;
+    color: white;
+}
+
+.subject-details {
+    padding-left: 10px;
+    line-height: 30px;
+    margin-bottom: 56px;
+}
+
+.subject-card {
+    display:inline-block;
+    width: 100%;
+    padding: 0px;
+}
+
+.subject-details ul {
+    list-style-type: square;
+}
+
+.page-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: fit-content;
+    height: 60px;
+    float: bottom;
+    clear: top;
+    border-top: black 1px solid;
+    text-decoration: none;
+    display: block;
+    border-bottom: 0px;
+    padding: 16px;
+}
+
+.custom-link1 {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: fit-content;
+}

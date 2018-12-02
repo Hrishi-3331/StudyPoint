@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-
+from .models import *
 # Create your views here.
 
 
@@ -13,16 +13,20 @@ def homepage(request):
 
 def physicsstream(request):
     title = 'Physics Sem'
+    queryset = phySemSubject.objects.all()
     args = {
-        'title': title
+        'title': title,
+        'subjects': queryset
     }
     return render(request, 'Firstyear/physicssem.html', args)
 
 
 def chemstream(request):
     title = 'Chemistry Sem'
+    queryset = chemSemSubject.objects.all()
     args = {
-        'title': title
+        'title': title,
+        'subjects': queryset
     }
     return render(request, 'Firstyear/chemsem.html', args)
 

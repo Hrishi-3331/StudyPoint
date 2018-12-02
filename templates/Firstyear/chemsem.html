@@ -1,0 +1,49 @@
+{% load staticfiles %}
+{% include 'StudyPoint/base.html' %}
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/Firstyear/psem.css' %}">
+{% endblock %}
+
+{% block body %}
+<center>
+<br>
+<h1>Chemistry Stream</h1>
+<br>
+<div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <br>
+</div>
+</center>
+<center>
+<div class="subjects">
+
+    {% for sub in subjects %}
+        <div class="subject-card">
+         <div class="left-box">
+                <img src="{{ sub.image.url }}" class="sub-img">
+         </div>
+         <div class="right-box">
+            <div class="subject-title">
+               <h3>{{ sub.subject_name }}</h3>
+            </div>
+            <div class="subject-details">
+            <br>
+                <ul>
+                     <li>Credits: {{ sub.credits }}</li>
+                     <li>Difficulty : {{ sub.difficulty }}</li>
+                     <li>Syllabus : {{ sub.syllabus }}</li>
+                </ul>
+            </div>
+             <div class="page-link">
+                 <a class="custom-link1" href='{{ sub.link }}'>Study More>></a>
+             </div>
+          </div>
+        </div>
+    <br><br><br>
+    {% endfor %}
+
+
+</div>
+</center>
+
+{% endblock %}

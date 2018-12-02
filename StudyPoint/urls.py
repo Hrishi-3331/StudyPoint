@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import about, index, contactus
+from django.conf.urls.static import static
+from django.conf import settings
 
-urlpatterns = {
+urlpatterns = [
     path('', index),
     path('about/', about),
     path('contact/', contactus),
@@ -25,5 +27,7 @@ urlpatterns = {
     path('firstyear/', include('Firstyear.urls')),
     path('ECE/', include('ECE.urls')),
     path('CSE/', include('CSE.urls')),
-    path('CHE/', include('CHE.urls')),
-}
+    path('CHE/', include('CHE.urls'))
+]
+
+urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
