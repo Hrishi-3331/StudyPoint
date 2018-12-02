@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="778cf08b-c74f-4b75-b1ef-a09923b63705" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Firstyear/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Firstyear/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Firstyear/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Firstyear/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Firstyear/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Firstyear/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyPoint/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudyPoint/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyPoint/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudyPoint/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Firstyear/chemsem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Firstyear/chemsem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Firstyear/physicssem.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Firstyear/physicssem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Firstyear/chemistry.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Firstyear/chemistry.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,27 +17,27 @@
     <session id="1925009139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.120" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1575" />
-          <entry key="html" value="2541" />
+          <entry key="html" value="2599" />
           <entry key="py" value="2479" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1575" />
-          <entry key="HTML" value="2541" />
+          <entry key="HTML" value="2599" />
           <entry key="Python" value="2479" />
         </counts>
       </usages-collector>
@@ -52,7 +45,7 @@
         <counts>
           <entry key="css" value="7" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="25" />
+          <entry key="html" value="27" />
           <entry key="py" value="31" />
           <entry key="txt" value="1" />
         </counts>
@@ -60,7 +53,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="25" />
+          <entry key="HTML" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="31" />
           <entry key="Scratch" value="1" />
@@ -73,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Firstyear/physicssem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="48" column="14" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="187">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -83,15 +76,24 @@
         <entry file="file://$PROJECT_DIR$/templates/Firstyear/chemsem.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Firstyear/chemistry.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Firstyear/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="141">
               <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -107,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/CSS/Firstyear/psem.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
+            <state relative-caret-position="623">
               <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
             </state>
           </provider>
@@ -128,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Firstyear/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="85">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding>
                 <marker date="1543753342346" expanded="true" signature="93:98" ph="..." />
                 <marker date="1543753342346" expanded="true" signature="480:485" ph="..." />
@@ -138,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Firstyear/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -196,6 +198,7 @@
         <option value="$PROJECT_DIR$/static/CSS/Firstyear/psem.css" />
         <option value="$PROJECT_DIR$/templates/Firstyear/chemsem.html" />
         <option value="$PROJECT_DIR$/Firstyear/views.py" />
+        <option value="$PROJECT_DIR$/templates/Firstyear/chemistry.html" />
       </list>
     </option>
   </component>
@@ -219,17 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="StudyPoint" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,21 +229,16 @@
               <item name="StudyPoint" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyPoint" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
             <path>
-              <item name="StudyPoint" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyPoint" type="462c0819:PsiDirectoryNode" />
-              <item name="Firstyear" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyPoint" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyPoint" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyPoint" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyPoint" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="StudyPoint" type="462c0819:PsiDirectoryNode" />
+              <item name="StudyPoint" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -343,7 +330,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -492,9 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Firstyear/chemistry.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Firstyear/physics.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -565,20 +549,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/StudyPoint/subjectcard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Firstyear/physicssem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="48" column="14" selection-end-line="48" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/StudyPoint/subjectcard.html" />
     <entry file="file://$PROJECT_DIR$/StudyPoint/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -596,42 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Firstyear/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <marker date="1543753342346" expanded="true" signature="93:98" ph="..." />
-            <marker date="1543753342346" expanded="true" signature="480:485" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/CSS/Firstyear/psem.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
+        <state relative-caret-position="623">
           <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Firstyear/chemsem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Firstyear/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1543754255602" expanded="true" signature="188:193" ph="..." />
-            <marker date="1543754255602" expanded="true" signature="273:477" ph="..." />
-            <marker date="1543754255602" expanded="true" signature="503:508" ph="..." />
-            <marker date="1543754255602" expanded="true" signature="732:757" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,6 +590,52 @@
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Firstyear/chemsem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Firstyear/chemistry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Firstyear/physicssem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Firstyear/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <marker date="1543753342346" expanded="true" signature="93:98" ph="..." />
+            <marker date="1543753342346" expanded="true" signature="480:485" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Firstyear/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1543754255602" expanded="true" signature="188:193" ph="..." />
+            <marker date="1543754255602" expanded="true" signature="273:477" ph="..." />
+            <marker date="1543754255602" expanded="true" signature="503:508" ph="..." />
+            <marker date="1543754255602" expanded="true" signature="732:757" ph="..." />
           </folding>
         </state>
       </provider>
