@@ -73,3 +73,25 @@
     text-decoration: none;
     background-color: #e5e5e5;
 }
+
+.custom-dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.custom-dropdown-content a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.dropdown:hover .custom-dropdown-content {
+    display: block;
+    background-color: white;
+    width: 220px;
+    text-decoration: none;
+}
+
+.custom-dropdown-content a:hover {
+    background-color: #979797;
+}

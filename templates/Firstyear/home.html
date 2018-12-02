@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>VNIT StudyPoint</title>
+    <title>First Year | VNIT StudyPoint</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -34,30 +34,26 @@
                 <a class="nav-link custom-link" href='/'><i class="fa fa-fw fa-home"></i> Home</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link custom-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Department </a>
-                <div class="dropdown-menu  custom-dropdown-menu">
-                    <div class="dropdown-header">FIRST YEAR</div>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Physics Stream</a>
-                    <a class="dropdown-item" href="#">Chemistry Stream</a>
+                <a class="nav-link custom-link" href="#">Department <i class="fa fa-fw fa-caret-down"></i></a>
+                <div class="custom-dropdown-content">
+                    <a href='/firstyear'> First Year</a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">DEPARTMENTS</div>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-laptop"></i>  CSE</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-microchip"></i>  ECE</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-plug"></i>  EEE</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-wrench"></i>  MECH</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-industry"></i>  MME</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-flask"></i>  CHE </a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-fw fa-skull-crossbones"></i>  MIN</a>
-                    <div class="dropdown-divider"></div>
+                    <a href="#"><i class="fa fa-fw fa-laptop"></i>  CSE</a>
+                    <a href="#"><i class="fa fa-fw fa-microchip"></i>  ECE</a>
+                    <a href="#"><i class="fa fa-fw fa-plug"></i>  EEE</a>
+                    <a href="#"><i class="fa fa-fw fa-wrench"></i>  MECH</a>
+                    <a href="#"><i class="fa fa-fw fa-industry"></i>  MME</a>
+                    <a href="#"><i class="fa fa-fw fa-flask"></i>  CHE </a>
+                    <a href="#"><i class="fa fa-fw fa-skull-crossbones"></i>  MIN</a>
                 </div>
             </li>
             <li>
-                <a class="nav-link custom-link" href='about' ><i class="fa fa-fw fa-info-circle"></i> About Us</a>
+                <a class="nav-link custom-link" href='/about' ><i class="fa fa-fw fa-info-circle"></i> About Us</a>
 
            <li class="nav-item">
-                <a class="nav-link custom-link" href='contact'><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+                <a class="nav-link custom-link" href='/contact'><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
             </li>
         </ul>
 
@@ -87,14 +83,14 @@
             <div class="heading">
                 <h3>PHYSICS STREAM</h3>
             </div>
-            <a href="#"><img src="{% static 'IMAGES/physics.jpg' %}" class="stream-img"></a>
+            <a href='physicssem'><img src="{% static 'IMAGES/physics.jpg' %}" class="stream-img"></a>
             <div class="menu">
                 <ul class="menu-list">
-                  <li class="menu-item"><a class="menu-link" href="#">Engineering Mechanics</a></li>
-                  <li class="menu-item"><a class="menu-link" href="#">Engineering Drawing</a> </li>
-                  <li class="menu-item"><a class="menu-link" href="#">Mathematics</a> </li>
-                  <li class="menu-item"><a class="menu-link" href="#">Physics</a> </li>
-                  <li class="menu-item"><a class="menu-link" href="#">Communication Skill</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='em'>Engineering Mechanics</a></li>
+                  <li class="menu-item"><a class="menu-link" href='ed'>Engineering Drawing</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='maths'>Mathematics</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='physics'>Physics</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='cs'>Communication Skill</a> </li>
 
                 </ul>
             </div>
@@ -103,14 +99,14 @@
             <div class="heading">
                 <h3>CHEMISTRY STREAM</h3>
             </div>
-            <a href="#"><img src="{% static 'IMAGES/chem.jpg' %}" class="stream-img"></a>
+            <a href='chemistrysem'><img src="{% static 'IMAGES/chem.jpg' %}" class="stream-img"></a>
              <div class="menu">
                 <ul class="menu-list">
-                  <li class="menu-item"><a class="menu-link" href="#">Electrical Engineering</a></li>
-                  <li class="menu-item"><a class="menu-link" href="#">Computer Programming</a> </li>
-                  <li class="menu-item"><a class="menu-link" href="#">Mathematics</a> </li>
-                  <li class="menu-item"><a class="menu-link" href="#">Chemistry</a> </li>
-                  <li class="menu-item"><a class="menu-link" href="#">Social Science</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='ee'>Electrical Engineering</a></li>
+                  <li class="menu-item"><a class="menu-link" href='cp'>Computer Programming</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='maths'>Mathematics</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='chemistry'>Chemistry</a> </li>
+                  <li class="menu-item"><a class="menu-link" href='ss'>Social Science</a> </li>
 
                 </ul>
             </div>
