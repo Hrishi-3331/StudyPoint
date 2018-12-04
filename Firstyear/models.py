@@ -25,3 +25,35 @@ class chemSemSubject(models.Model):
 
     def __str__(self):
         return self.subject_name
+
+
+class cpAssignment(models.Model):
+    title = models.CharField(max_length=100)
+    file = models.FileField()
+
+    def __str__(self):
+        return self.title
+
+
+class cpNote(models.Model):
+    title = models.CharField(max_length=100)
+    file = models.FileField()
+
+    def __str__(self):
+        return self.title
+
+
+class cpEbook(models.Model):
+    title = models.CharField(max_length=100)
+    link = models.CharField(max_length=500)
+
+    def __str__(self):
+       return self.title
+
+
+class cpQpaper(models.Model):
+      title = models.CharField(max_length=100)
+      file = models.FileField()
+
+      def __str__(self):
+          return self.title

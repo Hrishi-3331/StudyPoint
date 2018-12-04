@@ -1,79 +1,9 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>VNIT StudyPoint</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/indexstyle.css' %}">
-</head>
-<body>
-
+{% extends 'StudyPoint/base.html' %}
+{% block headerdesign %}
 <header class="container-fluid custom-head">
     <h1 class="title-class1">Visvesvaraya National Institute of Technology</h1><br>
     <h1 class="title-class2">VNIT</h1>
     <h2>STUDY POINT</h2>
 </header>
+{% endblock %}
 
-<nav class="navbar navbar-expand-sm sticky-top navbar-custom container-fluid" id="header">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
-            <i class="fa fa-fw fa-bars" style="color: white"></i>
-       </button>
-        <div class="collapse navbar-collapse" id="navbarToggle">
-        <ul class="nav navbar-nav ">
-            <li class="nav-item custom-item">
-                <a class="nav-link custom-link" href='/'><i class="fa fa-fw fa-home"></i> Home</a>
-            </li>
-             <li class="nav-item dropdown">
-                <a class="nav-link custom-link" href="#">Department <i class="fa fa-fw fa-caret-down"></i></a>
-                <div class="custom-dropdown-content">
-                    <a href='/firstyear'> First Year</a>
-                    <div class="dropdown-divider"></div>
-                    <div class="dropdown-header">DEPARTMENTS</div>
-                    <div class="dropdown-divider"></div>
-                    <a href="#"><i class="fa fa-fw fa-laptop"></i>  CSE</a>
-                    <a href="#"><i class="fa fa-fw fa-microchip"></i>  ECE</a>
-                    <a href="#"><i class="fa fa-fw fa-plug"></i>  EEE</a>
-                    <a href="#"><i class="fa fa-fw fa-wrench"></i>  MECH</a>
-                    <a href="#"><i class="fa fa-fw fa-industry"></i>  MME</a>
-                    <a href="#"><i class="fa fa-fw fa-flask"></i>  CHE </a>
-                    <a href="#"><i class="fa fa-fw fa-skull-crossbones"></i>  MIN</a>
-                </div>
-            </li>
-            <li>
-                <a class="nav-link custom-link" href='/about' ><i class="fa fa-fw fa-info-circle"></i> About Us</a>
-
-           <li class="nav-item">
-                <a class="nav-link custom-link" href='/contact'><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-            </li>
-        </ul>
-
-        </div>
-
-
-        <div class="custom-right">
-            <ul class="nav navbar-right">
-                <form class="form-inline custom-form" action="submit">
-                    <input class="form-control mr-sm-2" type="text" placeholder="SEARCH HERE">
-                    <button class="btn custom-btn" type="submit"><i class="fa fa-fw fa-search"></i> </button>
-                </form>
-                <li class="nav-item"><a class="nav-link custom-link" href="#"><i class="fa fa-fw fa-user"></i> Sign Up</a></li>
-                <li class="nav-item"><a class="nav-link custom-link" href="#"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
-            </ul>
-        </div>
-
-    </div>
-</nav>
-
-<br><br><br><br><br><br><br><br>
-</body>
-</html>

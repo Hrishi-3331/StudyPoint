@@ -34,7 +34,7 @@
 }
 
 .subject-title {
-    width: fit-content;
+    width: 100%;
     padding: 8px;
     background-color: gray;
     color: white;
@@ -59,7 +59,7 @@
 .page-link {
     margin-left: 5px;
     margin-right: 5px;
-    width: fit-content;
+    width: 100%;
     height: 60px;
     float: bottom;
     clear: top;
@@ -75,4 +75,8 @@
     display: block;
     width: 100%;
     height: fit-content;
+}
+
+.custom-link1:hover {
+    text-decoration: none;
 }

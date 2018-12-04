@@ -19,7 +19,8 @@
 
 </head>
 <body>
-
+{% block headerdesign %}
+{% endblock %}
 <nav class="navbar navbar-expand-sm sticky-top navbar-custom" id="header">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
@@ -42,7 +43,8 @@
                     <a href="#"><i class="fa fa-fw fa-plug"></i>  EEE</a>
                     <a href="#"><i class="fa fa-fw fa-wrench"></i>  MECH</a>
                     <a href="#"><i class="fa fa-fw fa-industry"></i>  MME</a>
-                    <a href="#"><i class="fa fa-fw fa-flask"></i>  CHE </a>
+                    <a href="#"><i class="fa fa-fw fa-flask"></i>  CME </a>
+                    <a href="#"><i></i> CIV </a>
                     <a href="#"><i class="fa fa-fw fa-skull-crossbones"></i>  MIN</a>
                 </div>
             </li>
@@ -67,8 +69,9 @@
                 <li class="nav-item"><a class="nav-link custom-link" href="#"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
             </ul>
         </div>
-
     </div>
+    {% block leftbar %}
+    {% endblock %}
 </nav>
 {% block body %}
 {% endblock %}

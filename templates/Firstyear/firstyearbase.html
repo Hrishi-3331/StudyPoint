@@ -1,0 +1,51 @@
+{% extends 'StudyPoint/base.html' %}
+{% load staticfiles %}
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/Firstyear/firstyearbase.css' %}">
+{% endblock %}
+{% block headerdesign %}
+<header class="container-fluid {{ 'header-style-'|add:subject }}">
+</header>
+{% endblock %}
+{% block body %}
+<ul class="right-bar">
+{% with url_name=subject %} {% with url_name2=subject|add:'_assignments'%} {% with url_name3=subject|add:'_notes'%} {%with url_name4=subject|add:'_ebooks'%} {%with url_name5=subject|add:'_qpapers'%} {%with url_name6=subject|add:'_prac'%}
+<a class="right-bar-menu {% if request.resolver_match.url_name == ''|add:subject  %}active{% endif %}" href="{% url url_name %}"><li class="right-bar-item">GENERAL INFORMATION</li></a>
+<a class="right-bar-menu {% if request.resolver_match.url_name == ''|add:subject|add:'_assignments' %}active{% endif %}"  href="{% url url_name2 %}"><li class="right-bar-item">ASSIGNMENTS</li></a>
+<a class="right-bar-menu {% if request.resolver_match.url_name == ''|add:subject|add:'_notes' %}active{% endif %}" href="{% url url_name3 %}"><li class="right-bar-item">NOTES</li></a>
+<a class="right-bar-menu {% if request.resolver_match.url_name == ''|add:subject|add:'_ebooks' %}active{% endif %}" href="{% url url_name4 %}"><li class="right-bar-item">EBOOKS</li></a>
+<a class="right-bar-menu {% if request.resolver_match.url_name == ''|add:subject|add:'_qpapers' %}active{% endif %}" href="{% url url_name5 %}"><li class="right-bar-item">QUESTION PAPERS</li></a>
+<a class="right-bar-menu {% if request.resolver_match.url_name == ''|add:subject|add:'_prac' %}active{% endif %}" href="{% url url_name6 %}"><li class="right-bar-item">PRACTICALS</li></a>
+{% endwith %}{% endwith %}{% endwith %}{% endwith %}{% endwith %}{% endwith %}
+</ul>
+
+
+    <div class="page-content">
+    <div class="content-title">
+        <h2>{{ heading}}</h2>
+    </div>
+
+        {% if content_text != ''%}
+         <div class="content-text">
+        <p>{{ content_text }}</p>
+         </div>
+        {% endif %}
+
+    {% if queryset.count == 0 %}
+        <div class="content-text">
+            <p>No files found!</p>
+        </div>
+    {% endif %}
+
+    {% if queryset != '' %}
+    <div class="content-list">
+        <ul class="content-list-block">
+            {% for query in queryset %}
+            <li class="content-list-item"><a class="content-list-link" href="{{ query.file.url }}">{{ query.title }}</a> </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% endif %}
+    </div>
+{% endblock %}

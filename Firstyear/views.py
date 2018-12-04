@@ -65,10 +65,98 @@ def em(request):
 
 def cp(request):
     title = 'C Programming'
+    heading = 'GENERAL INFORMATION'
+    content_text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+    queryset = ''
+    subject = 'cp'
     args = {
-        'title': title
+        'title': title,
+        'heading': heading,
+        'content_text': content_text,
+        'queryset': queryset,
+        'subject': subject
     }
-    return render(request, 'Firstyear/cp.html')
+    return render(request, 'Firstyear/firstyearbase.html', args)
+
+
+def cp_ass(request):
+    title = 'C Programming'
+    heading = 'ASSIGNMENTS'
+    content_text = ''
+    queryset = cpAssignment.objects.all()
+    subject = 'cp'
+    args = {
+        'title': title,
+        'heading': heading,
+        'content_text': content_text,
+        'queryset': queryset,
+        'subject': subject
+    }
+    return render(request, 'Firstyear/firstyearbase.html', args)
+
+
+def cp_notes(request):
+    title = 'C Programming'
+    heading = 'NOTES'
+    content_text = ''
+    queryset = cpNote.objects.all()
+    subject = 'cp'
+    args = {
+        'title': title,
+        'heading': heading,
+        'content_text': content_text,
+        'queryset': queryset,
+        'subject': subject
+    }
+    return render(request, 'Firstyear/firstyearbase.html', args)
+
+
+def cp_ebooks(request):
+    title = 'C Programming'
+    heading = 'EBOOKS'
+    content_text = ''
+    queryset = cpEbook.objects.all()
+    subject = 'cp'
+    args = {
+        'title': title,
+        'heading': heading,
+        'content_text': content_text,
+        'queryset': queryset,
+        'subject': subject
+    }
+    return render(request, 'Firstyear/firstyearbase.html', args)
+
+
+def cp_qpapers(request):
+    title = 'C Programming'
+    heading = 'Question Papers'
+    content_text = ''
+    queryset = cpQpaper.objects.all()
+    subject = 'cp'
+    args = {
+        'title': title,
+        'heading': heading,
+        'content_text': content_text,
+        'queryset': queryset,
+        'subject': subject
+    }
+    return render(request, 'Firstyear/firstyearbase.html', args)
+
+
+def cp_prac(request):
+    title = 'C Programming'
+    heading = 'PRACTICALS'
+    content_text = 'No Files found!'
+    queryset = ''
+    subject = 'cp'
+    args = {
+        'title': title,
+        'heading': heading,
+        'content_text': content_text,
+        'queryset': queryset,
+        'subject': subject
+    }
+    return render(request, 'Firstyear/firstyearbase.html', args)
 
 
 def ed(request):
