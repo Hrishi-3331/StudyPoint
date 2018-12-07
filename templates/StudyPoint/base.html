@@ -35,7 +35,7 @@
              <li class="nav-item dropdown">
                 <a class="nav-link custom-link" href="#">Department <i class="fa fa-fw fa-caret-down"></i></a>
                 <div class="custom-dropdown-content">
-                    <a href='/firstyear'> First Year</a>
+                    <a href="/firstyear"> First Year</a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">DEPARTMENTS</div>
                     <div class="dropdown-divider"></div>
@@ -45,15 +45,15 @@
                     <a href="#"><i class="fa fa-fw fa-wrench"></i>  MECH</a>
                     <a href="#"><i class="fa fa-fw fa-industry"></i>  MME</a>
                     <a href="#"><i class="fa fa-fw fa-flask"></i>  CME </a>
-                    <a href="#"><i></i> CIV </a>
+                    <a href="#"><i class="fa fa-fw fa-building"></i> CIV </a>
                     <a href="#"><i class="fa fa-fw fa-skull-crossbones"></i>  MIN</a>
                 </div>
             </li>
             <li>
-                <a class="nav-link custom-link" href='/about' ><i class="fa fa-fw fa-info-circle"></i> About Us</a>
+                <a class="nav-link custom-link" href='{% url 'about' %}' ><i class="fa fa-fw fa-info-circle"></i> About Us</a>
 
            <li class="nav-item">
-                <a class="nav-link custom-link" href='/contact'><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+                <a class="nav-link custom-link" href='{% url 'contact' %}'><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
             </li>
         </ul>
 
@@ -64,7 +64,7 @@
             <ul class="nav navbar-right">
                 <form class="form-inline custom-form" action="submit">
                     <input class="form-control mr-sm-2" type="text" placeholder="SEARCH HERE">
-                    <button class="btn custom-btn" type="submit"><i class="fa fa-fw fa-search"></i> </button>
+                    <button class="btn custom-btn" type="button"><i class="fa fa-fw fa-search"></i> </button>
                 </form>
                 {% if user.is_authenticated %}
                 <li class="nav-item"><a class="nav-link custom-link" href="{% url 'logout' %}"><i class="fa fa-fw fa-sign-out-alt"></i> LogOut</a></li>

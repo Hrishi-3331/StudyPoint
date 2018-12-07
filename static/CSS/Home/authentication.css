@@ -3,8 +3,9 @@
     width: 25%;
     border-radius: 8px;
     margin-top: 25px;
-    border: solid 1px black;
     padding: 25px;
+    z-index: 600;
+    opacity: 0.8;
 }
 
 .custom-form {
@@ -24,4 +25,37 @@
     padding: 12px;
     background-color: green;
     color: white;
+}
+
+.form-decorator{
+    width: 15%;
+    height: 180px;
+    background-color: white;
+    border-top-left-radius: 300%;
+    border-top-right-radius: 300%;
+    z-index: 500;
+    margin-top: 25px;
+    margin-bottom: -130px;
+    text-align: center;
+    padding: 3px;
+    opacity: 0.8;
+}
+
+.background-image {
+    position: fixed;
+    width: 105%;
+    height: 100%;
+    margin: -4px;
+    background: url("/static/IMAGES/loginbackground.jpg") no-repeat;
+    background-size: cover;
+    z-index: 1;
+    filter: blur(5px);
+    display: block;
+}
+
+.content-division {
+    position: fixed;
+    z-index: 845;
+    width: 100%;
+    height: 100%;
 }

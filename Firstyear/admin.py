@@ -60,3 +60,4 @@ admin.site.register(csEbook)
 admin.site.register(csNote)
 admin.site.register(csAssignment)
 admin.site.register(csPractical)
+

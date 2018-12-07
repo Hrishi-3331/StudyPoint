@@ -21,10 +21,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('', index, name='homepage'),
-    path('about/', about),
-    path('contact/', contactus),
+    path('about/', about, name='about'),
+    path('contact/', contactus, name='contact'),
     path('admin/', admin.site.urls),
-    path('firstyear/', include('Firstyear.urls')),
+    path('firstyear/', include('Firstyear.urls'), name='firstyear'),
     path('ECE/', include('ECE.urls')),
     path('CSE/', include('CSE.urls')),
     path('signup/', SignupFormView.as_view(), name='signup'),

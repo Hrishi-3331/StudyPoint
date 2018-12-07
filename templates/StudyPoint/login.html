@@ -4,6 +4,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/authentication.css' %}">
 {% endblock %}
 {% block body %}
+     <div class="background-image"></div>
+    <center>
+    <div class="content-division">
     {% if user.is_authenticated %}
     <h4>You are already logged in as {{ user.username }}.</h4>
     <h5>Logout first to continue</h5>
@@ -29,4 +32,6 @@
     </div>
     </center>
     {% endif %}
+    </div>
+    </center>
 {% endblock %}
