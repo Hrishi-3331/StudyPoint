@@ -1,9 +1,22 @@
 {% extends 'StudyPoint/base.html' %}
+{% load staticfiles %}
 {% block headerdesign %}
 <header class="container-fluid custom-head">
     <h1 class="title-class1">Visvesvaraya National Institute of Technology</h1><br>
     <h1 class="title-class2">VNIT</h1>
     <h2>STUDY POINT</h2>
 </header>
+{% endblock %}
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/index.css' %}">
+{% endblock %}
+{% block body %}
+<div class="profile-box">
+    <i class="fas fa-user-circle fa-5x float-icon-left"></i>
+    <div class="float-prof-right">
+        <h4>{{ user.username }}</h4>
+        <h4>21357</h4>
+    </div>
+</div>
 {% endblock %}
 

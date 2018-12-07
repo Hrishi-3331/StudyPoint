@@ -1,0 +1,32 @@
+{% extends 'StudyPoint/base.html' %}
+{% load staticfiles %}
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/authentication.css' %}">
+{% endblock %}
+{% block body %}
+    {% if user.is_authenticated %}
+    <h4>You are already logged in as {{ user.username }}.</h4>
+    <h5>Logout first to continue</h5>
+    {% else %}
+    <center>
+    <div class="content-form">
+        <h3><u>Login User</u></h3>
+    <form class="custom-form" method="post" >
+        {% csrf_token %}
+        <br>
+        <p>
+             Username:<br>
+            {{ form.username}}<br>
+            Password: <br>
+            {{ form.password }}<br>
+         </p>
+        <br>
+        <center>
+        <button class="custom-form-btn btn" type="submit">Login</button><br>
+        <h6>Need an Account? <a href="{% url 'signup' %}">SignUp here</a></h6>
+        </center>
+    </form>
+    </div>
+    </center>
+    {% endif %}
+{% endblock %}

@@ -15,19 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import about, index, contactus
+from .views import about, index, contactus, SignupFormView, LoginFormView, logOut
 from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('', index),
+    path('', index, name='homepage'),
     path('about/', about),
     path('contact/', contactus),
     path('admin/', admin.site.urls),
     path('firstyear/', include('Firstyear.urls')),
     path('ECE/', include('ECE.urls')),
     path('CSE/', include('CSE.urls')),
-    path('CHE/', include('CHE.urls'))
+    path('signup/', SignupFormView.as_view(), name='signup'),
+    path('login/', LoginFormView.as_view(), name='login'),
+    path('logout/', logOut, name='logout')
+
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

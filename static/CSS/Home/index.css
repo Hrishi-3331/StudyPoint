@@ -1,0 +1,23 @@
+.profile-box {
+    background-color: white;
+    margin: 16px 25px 8px 8px;
+    float: right;
+    padding: 8px;
+    width: 17%;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.float-icon-left {
+    float: left;
+    margin: 2px 6px 2px 6px;
+}
+
+.float-prof-right {
+    display: block;
+    margin: 16px;
+}
+
+.float-prof-right h4 {
+    line-height: 14px;
+}

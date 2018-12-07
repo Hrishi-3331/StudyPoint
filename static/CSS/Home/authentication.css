@@ -1,0 +1,27 @@
+.content-form {
+    background-color: white;
+    width: 25%;
+    border-radius: 8px;
+    margin-top: 25px;
+    border: solid 1px black;
+    padding: 25px;
+}
+
+.custom-form {
+    text-align: left;
+}
+
+.custom-form-input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid white;
+    border-bottom-color: black;
+    margin-bottom: 8px;
+}
+
+.custom-form-btn {
+    width: 80%;
+    padding: 12px;
+    background-color: green;
+    color: white;
+}

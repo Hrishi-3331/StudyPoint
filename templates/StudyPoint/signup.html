@@ -1,0 +1,36 @@
+{% extends 'StudyPoint/base.html' %}
+{% load staticfiles %}
+{% block stylesheet %}
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/Home/authentication.css' %}">
+{% endblock %}
+{% block body %}
+    {% if user.is_authenticated %}
+    <h4>You are already logged in as {{ user.username }}.</h4>
+    <h3><a href="{% url 'logout' %}"> Logout here </a> first to continue</h3>
+    {% else %}
+    <center>
+    <div class="content-form">
+        <h3><u>New User Registration</u></h3>
+    <form class="custom-form" method="post" >
+        {% csrf_token %}
+        <br>
+        <p>
+             Username:<br>
+            {{ form.username}}<br>
+            ID No.: <br>
+            {{ form.idnumber }}<br>
+            Email ID: <br>
+            {{ form.email }}<br>
+            Password: <br>
+            {{ form.password }}<br>
+       </p>
+        <br>
+        <center>
+        <button class="custom-form-btn btn" type="submit">SignUp</button><br>
+        <h8>already registered? <a href="{% url 'login' %}">Login here</a></h8>
+        </center>
+    </form>
+    </div>
+    </center>
+    {% endif %}
+{% endblock %}
