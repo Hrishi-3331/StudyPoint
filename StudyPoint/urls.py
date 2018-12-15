@@ -27,6 +27,8 @@ urlpatterns = [
     path('firstyear/', include('Firstyear.urls'), name='firstyear'),
     path('ECE/', include('ECE.urls')),
     path('CSE/', include('CSE.urls')),
+    path('CIV/', include('CIV.urls')),
+    path('CME/', include('CME.urls')),
     path('signup/', SignupFormView.as_view(), name='signup'),
     path('login/', LoginFormView.as_view(), name='login'),
     path('logout/', logOut, name='logout')
